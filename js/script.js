@@ -19,7 +19,7 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  * Math
  */
-const getImage = async (URLAddress) => {
+const getImage = async ("http://openweathermap.org/img/wn/10d@2x.png") => {
   try {
     const result = await fetch("http://openweathermap.org/img/wn/10d@2x.png")
     const jsonData = await result.json()
