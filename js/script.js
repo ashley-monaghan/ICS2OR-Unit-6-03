@@ -43,6 +43,4 @@ const getImage = async (URLAddress) => {
   }
 }
 
-getImage(
-  "https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5"
-)
+getImage("https://api.https://www.google.com/url?q=https%3A%2F%2Fopenweathermap.org%2Fweather-conditions&sa=D&sntz=1&usg=AOvVaw25gMqUGVU4FAcAo7HIPSZs.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5")
