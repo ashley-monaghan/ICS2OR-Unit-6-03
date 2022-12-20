@@ -23,15 +23,15 @@ if (navigator.serviceWorker) {
  */
 const weather2 = async (URLAddress) => {
   try {
-    const request = await fetch(URLAddress);
-    const jsonData = await request.json();
-    var temperature1 = jsonDate.main.temp;
-    var temperature2 = 0;
-    const feeling = jsonDate.weather[0];
-    const image = feeling.icon;
-    temperature2 = temperature1 - 273.15;
+    const request = await fetch(URLAddress)
+    const jsonData = await request.json()
+    var temperature1 = jsonDate.main.temp
+    var temperature2 = 0
+    const feeling = jsonDate.weather[0]
+    const image = feeling.icon
+    temperature2 = temperature1 - 273.15
 
-    console.log(jsonData.weather);
+    console.log(jsonData.weather)
     document.getElementById("image").innerHTML =
       "<img src='http://openweathermap.org/img/wn/10d@2x.png" +
       image +
