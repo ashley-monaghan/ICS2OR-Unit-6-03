@@ -13,9 +13,9 @@ if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS2OR-Unit-6-03/sw.js", {
     scope: "/ICS2OR-Unit-6-03/",
   })
-};
+}
 
-("use strict")
+;("use strict")
 
 /**
  * This function displays an alert.
