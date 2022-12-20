@@ -36,7 +36,7 @@ const weather2 = async (URLAddress) => {
       "<img src='http://openweathermap.org/img/wn/10d@2x.png" +
       image +
       "@2px.png' alt='Icon' width='10%'><br><h5>"
-    ;(">")
+    (">");
 
     document.getElementById("weather").innerHTML =
       "The weather right now is" + temperature2.toFixed(2) + " °C"
