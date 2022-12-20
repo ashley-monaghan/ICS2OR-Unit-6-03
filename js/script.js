@@ -29,15 +29,15 @@ const weather2 = async (URLAddress) => {
     const image = feeling.icon
     temp2 = temp1 - 273.15
 
-    console.log(jsonData.weather);
+    console.log(jsonData.weather)
     document.getElementById("image").innerHTML =
       "<img src='http://openweathermap.org/img/wn/10d@2x.png" +
       image +
-      "@2px.png' alt='Icon' width='10%'><br><h5>";
-    (">");
+      "@2px.png' alt='Icon' width='10%'><br><h5>"
+    ;(">")
 
     document.getElementById("weather").innerHTML =
-      "The weather right now is" + temperature2.toFixed(2) + " °C";
+      "The weather right now is" + temperature2.toFixed(2) + " °C"
   } catch (err) {
     console.log(err)
   }
