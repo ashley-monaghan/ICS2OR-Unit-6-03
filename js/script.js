@@ -25,8 +25,8 @@ const weather2 = async (URLAddress) => {
   try {
     const request = await fetch(URLAddress)
     const jsonData = await request.json()
-    var tempature1 = jsonData.main.temp
-    var tempature2 = 0
+    let tempature1 = jsonData.main.temp
+    let tempature2 = 0
     const feeling = jsonData.weather[0]
     const image = feeling.icon
     tempature2 = tempature1 - 273.15
@@ -39,7 +39,7 @@ const weather2 = async (URLAddress) => {
     ;(">")
 
     document.getElementById("theTemp").innerHTML =
-      "The Weather Right now is " + tempature2.toFixed(2) + " °C"
+      "The tempurature outside is " + tempature2.toFixed(2) + " °C!"
   } catch (err) {
     console.log(err)
   }
